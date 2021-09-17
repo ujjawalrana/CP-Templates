@@ -9,15 +9,17 @@ ll findParent(ll v){
 }
 
 void unionNodes(ll a, ll b) {
-    a = findParent(a);
-    b = findParent(b);
-    if (a != b) {
-        if (siz[a] < siz[b])
-            swap(a, b);
-        parent[b] = a;
-        if (siz[a] == siz[b])
-            siz[a]++;
+    ll parent_a = findParent(a);
+    ll parent_b = findParent(b);
+    
+    if(parent_a==parent_b) return;
+    
+    if(siz[parent_a]>=siz[parent_b]){
+        swap(parent_a,parent_b);
     }
+    siz[parent_b]+=siz[parent_a];
+    parent[parent_a]=parent_b;
+    return;
 }
 
 void clearDsu(ll n){
