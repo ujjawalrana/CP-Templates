@@ -1,3 +1,5 @@
+#define NCR
+
 const long long int N=1e5+10;
 
 vector<ll>fact(N);
