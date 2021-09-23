@@ -17,7 +17,6 @@ ll pow(ll a,ll b,ll m){
 }
 ll inv_mod(ll a,ll m){return pow(a,m-2,m);}
 ll ncrMod(ll n,ll r,ll m){
-    // get_fact(m);  
     if(n<r) return 0;
     return (fact[n]*inv_mod(fact[r],m)%m*inv_mod(fact[n-r],m)%m)%m;
 }
