@@ -4,8 +4,8 @@
 #define SIEVE 
 
 const long long int N=1e7+10;
-vector<ll>store(N);
 vector<bool>prime(N,true);
+vector<ll>store;
 
 void sieve(){ 
 
