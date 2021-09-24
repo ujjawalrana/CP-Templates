@@ -1,4 +1,5 @@
 // Time complexity O(M) 
+// Graph can ve directed or undirected 
 
 vector<ll>vis(1e5+10,0);
 bool dfs(ll v) {
