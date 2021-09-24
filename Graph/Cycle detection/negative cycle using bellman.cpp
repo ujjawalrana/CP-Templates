@@ -1,5 +1,5 @@
 // Time complexity EV
-// Graph shoud be direced, then only we can use bellman ford
+// Graph shoud be direced, then only we can use bellman ford algorithm
 
 void bellman_ford(){
 
