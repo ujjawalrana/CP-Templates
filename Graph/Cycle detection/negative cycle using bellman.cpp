@@ -32,7 +32,7 @@ void bellman_ford(){
 			}
 		}
 	}
-
+ 
 	if(x==-1){
 		cout<<"NO"; return;
 	}
