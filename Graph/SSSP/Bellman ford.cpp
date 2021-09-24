@@ -1,4 +1,5 @@
 // Time complexity- VE
+// Graph shoud be direced, then only we can use bellman ford
 
 void bellman_ford(){
 
