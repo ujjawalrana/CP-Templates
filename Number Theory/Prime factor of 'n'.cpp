@@ -12,7 +12,7 @@ void prime_factor(ll n){
 
     for(ll i=3;i*i<=n;i+=2){
         if(n%i==0){
-            prime.pb(2);
+            prime.pb(i);
             while(n%i==0)
                 n/=i;
         }
