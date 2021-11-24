@@ -12,7 +12,7 @@ void build(ll index,ll start,ll end){
     build(2*index+1,mid+1,end);
 
     // operation
-    seg[index]=max(seg[2*index],seg[2*index]+1);
+    seg[index]=max(seg[2*index],seg[2*index+1]);
 
 }
 
