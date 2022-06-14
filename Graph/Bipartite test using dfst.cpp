@@ -2,7 +2,7 @@
 // Each edge connects vertices of 2 different sets
 // If the color of parent and child are same then return false else return true
 
-void dfs(ll pos,ll ok){
+bool dfs(ll pos,ll ok){
 	vis[pos]=1;
 	col[pos]=ok;
 
