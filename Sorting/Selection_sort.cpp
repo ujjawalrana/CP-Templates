@@ -6,10 +6,12 @@
 
 // TIme - O(n^2)
 // Space - O(1)
+// In this the array sort form left to right
+// and it will take at max 'n' swap 
 
 void selectionSort(vector<int>&a,int n){
     
-   for(int i=0;i<n;i++){
+   for(int i=0;i<n-1;i++){
         int mn=i; // considering the ith element is minimum element 
        
         for(int j=i+1;j<n;j++){
