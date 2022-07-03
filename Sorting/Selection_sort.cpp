@@ -4,6 +4,9 @@
 // This implementation is not stable
 // Stable means order of same element will not maintain
 
+// TIme - O(n^2)
+// Space - O(1)
+
 void selectionSort(vector<int>&a,int n){
     
    for(int i=0;i<n;i++){
