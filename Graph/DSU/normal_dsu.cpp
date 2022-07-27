@@ -1,3 +1,10 @@
+// TC Operation = O(N) as naive approach
+// TC Operation = O(logN) using union by rank 
+// Best = Avg = O(Alpha(N)) , which is amoterized time complexity where "Alpha" grows very slowly. 
+// In fact it grows so slows that it doesn't exceed 4 that almost comes out to be constant.
+
+// TC  = O ( N )
+
 const ll N=1e5+10;
 
 vector<ll>parent(N),siz(N);
